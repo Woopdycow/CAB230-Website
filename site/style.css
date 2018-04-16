@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+#wrapper {
+  margin: 0px;
+}
+
+#header {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#header-contents {
+  width: 50%;
+  height: 100%;
+  padding: 0px;
+
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#splash {
+  background-color: cyan;
+  height: 600px;
+  width: 100%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
