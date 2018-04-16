@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample JavaScript page</title>
+		<script type="text/javascript" src="myscripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body">
+		<h1 id="welcome">Hello, world!</h1>
+		
+		<script type="text/javascript">
+			document.write("This is a test.");
+			console.log("Here is a log message");
+		</script>
+		
+		<p>
+			Here's a <a onclick="changeIt(); return false;" href="#">link</a> with an onclick</a>.
+		</p>
+		
+		<p>
+			<a onclick="sortList('fruits'); return false;" href="#">SORT LIST</a>
+		</p>
+		
+		<ul id="fruits">
+			<li>Orange</li>
+			<li>Apple</li>
+			<li>Banana</li>
+		</ul>
+		<h2><a onmouseover="showBox()" onmouseout="hideBox()">GHOST BOX</a></h2>
+		<div id="ghostBox">
+			YO
+		</div>
+		
+		<p>
+			<a onclick="sortTable('scores'); return false;" href="#">HIDE VALUES LESS THAN 5</a>
+		</p>
+		
+		<table id="scores">
+			<tr>
+				<th>Name</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>Susan</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>Clive</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Dave</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>Sam</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>Daniel</td>
+				<td>2</td>
+			</tr>
+		</table>
+		
+		</br>
+		
+		<button onclick="getLocation()">Get location!</button>
+		<p id="status">
+			Click the button to get your distance from Disney World.
+		</p>
+		
+		<select name="Wifi">
+		  <option value="wifiOne">Wifi 1</option>
+		  <option value="wifiTwo">Wifi 2</option>
+		  <option value="wifiThree">Wifi 3</option>
+		</select>
+		
+		<select name="Wifi">
+		  <option value="wifiOne">Wifi 1</option>
+		  <option value="wifiTwo">Wifi 2</option>
+		  <option value="wifiThree">Wifi 3</option>
+		</select>
+				
+	</body>
+</html>
