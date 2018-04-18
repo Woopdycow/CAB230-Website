@@ -1,20 +1,22 @@
 @font-face {
    font-family: roboto;
-   src: url("Roboto-Light.ttf");
+   src: url("Roboto-Regular.ttf");
 }
 
 * {
    font-family: roboto;
+   color: #e8e9eb;
 }
 
 div {
-  border-style: solid;
-  border-width: 1px;
   border-color: black;
+  border-width: 1px;
+  border-style: solid;
 }
 
 body {
   margin: 0px;
+  color: #e8e9eb;
   background: #2a2a2a
 }
 
@@ -24,8 +26,15 @@ img {
 }
 
 h1 {
-  font-size: 14pt;
+  font-size: 150%;
   text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 120%;
+  text-align: center center;
+  font-weight: bold;
 }
 
 #wrapper {
@@ -47,23 +56,18 @@ h1 {
   margin: auto;
 }
 
-#search-container {
+#splash-contents img {
+  height: 40%;
+  width: auto;
+  display: block;
   margin: auto;
-  margin-top: 35%;
+  margin-top: 80px;
 }
 
-#search-button {
-  background: #2370BC;
-  width: 10%;
-  height: 42px;
+#search-container {
   margin: auto;
-  border-style: solid;
-  border-radius: 8px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-width: 4px;
-  border-color: #2370BC;
-  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 #search-box {
@@ -77,13 +81,70 @@ h1 {
   border-bottom-right-radius: 0;
   border-width: 4px;
   border-color: #e8e9eb;
-  font-size: 18px;
+  font-size: 100%;
+  padding-left: 8px;
+}
+
+#search-button {
+  background: #2370BC;
+  width: 8%;
+  height: 42px;
+  margin: auto;
+  border-style: solid;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-width: 4px;
+  border-color: #2370BC;
+  font-size: 100%;
+  cursor: pointer;
+  color: #e8e9eb;
+}
+
+#search-button:hover {
+  background: #3380CC;
+  border-color: #3380CC;
+}
+
+#search-button:active {
+  background: #4390DC;
+  border-color: #4390DC;
+}
+
+#search-button:focus {
+  outline: 0;
+}
+
+#login {
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+  font-size: 80%;
+  background: #2a2a2a;
+  padding: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #2a2a2a;
+}
+
+#signup {
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+  font-size: 80%;
+  background: #2a2a2a;
+  padding: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #2a2a2a;
 }
 
 #splash-gradient {
   height: 100px;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,0), #2a2a2a);
+  background: linear-gradient(rgba(0,0,0,0), #2a2a2a)
 }
 
 #content {
