@@ -8,5 +8,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="header-contents">
+        <form action="#">
+          <button class="header-button"><h2>Home</h2></button>
+          <input id="search-box" type="text" placeholder="Search for a Hotspot..." name="search"><button id="search-button"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div id="content">
+
+      <div class="center-content-text">
+        <h1>Registration</h1>
+        <div class="break-line"></div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin placerat lacus sapien. Etiam non sem
+        <br>
+        risus. Maecenas venenatis interdum accumsan.
+        Quisque malesuada dapibus odio, id commodo dui.
+        <div class="break-line"></div>
+        <div id="validation-errors"></div>
+        <br>
+        <div id="registration">
+          <form name="userRegistration" action="#" onsubmit="return validate();">
+            <input type="text" placeholder="First Name" name="firstName"><input type="text" placeholder="Last Name" name="lastName"><br>
+            <input type="email" placeholder="Email" name="email"><br>
+            <input type="password" placeholder="Password" name="password"><br>
+            <input type="password" placeholder="Confirm Password" name="passwordConfirm"><br>
+            <h3>Birthday</h3>
+            <input type="number" placeholder="01" name="day">
+            <input type="number" placeholder="01" name="month">
+            <input type="number" placeholder="2018" name="year">
+            <br>
+            <input type="checkbox" name="tos">I accept the <a href="#"><b>Terms and Conditions</b></a></input>
+            <br>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <div id="footer-left">
+          <table class="valign">
+            <tr>
+              <td><a href="http://www.facebook.com/pages/Brisbane-Australia/Brisbane-City-Council/80836222708"><img src="facebook.png" alt="Facebook Link"><h3>Facebook</h3></a></td>
+              <td><a href="http://instagram.com/brisbanecitycouncil"><img src="insta.png" alt="Instagram Link"><h3>Instagram</h3></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.youtube.com/user/BrisbaneCityCouncil"><img src="youtube.png" alt="Youtube Link"><h3>Youtube</h3></a></td>
+              <td><a href="https://twitter.com/brisbanecityqld"><img src="twitter.png" alt="Twitter Link"><h3>Twitter</h3></a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="footer-right">
+            <img src="bcc.png" alt="Brisbane City Council Logo"><br>
+            <i>Dedicated to a better Brisbane</i>
+        </div>
+        <div class="footer-break-line"></div>
+        <div id="footer-center">
+          Bryan Kassulke 2018
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>

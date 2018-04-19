@@ -1,28 +1,13 @@
 function validate() {
 	alert("Submitted!");
-	
+
 	var success = true;
 	if (!checkName){
 		success = false;
 	}
-	
+
 	return success;
 	
-	// if (checkName(form){
-		// if (checkPassword(form){
-			// return true;
-		// } else {
-			// return false;
-		// }
-	// } else {
-		// if (checkPassword(form){
-			// return false;
-		// } else {
-			// return false;
-		// }	
-	// }
-}
-
 function checkName(form){
 	if (form.surname.value == "") {
 		document.getElementById("surnameMissing").style.visibility = "visible";
