@@ -24,7 +24,7 @@ a .result {
 }
 
 a:hover {
-  text-decoration: underline;;
+  text-decoration: underline;
 }
 
 a:visited {
@@ -34,7 +34,7 @@ a:visited {
 
 div {
   border-color: black;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
 }
 
@@ -73,6 +73,42 @@ h3 {
 li {
   margin-bottom: 15px;
 }
+
+.custom-select {
+  margin: auto;
+}
+
+.custom-select select {
+  color: #222222;
+  width: 15%;
+  height:50px;
+  border: C5C9BB;
+  border-top-width: 1px;
+  border-top-color: #C5C9BB;
+  font-size: 100%;
+  font-weight: bold;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.myLocation {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  width: 5%;
+  height:50px;
+  border: C5C9BB, 0px;
+  border-top-width: 1px;
+  border-top-color: #C5C9BB;
+  font-size: 100%;
+  font-weight: bold;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: inline-block;
+  padding-left: 8px;
+ }
 
 .header-button {
   height: 50px;
