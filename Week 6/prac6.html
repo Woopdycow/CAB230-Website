@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Welcome to my page.</title>
-		<script type="text/javascript" src="scripts.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
+  <head>
+    <title>Form</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head><body>
 		<h1>Sign Up</h1>
 		<form name="form1" action="prac6.html" onsubmit="return validate();">
 			Surname:<br>
-			<input type="text" name="surname" onchange="hideError()">
+			<input type="text" name="surname" onchange="hideError()" required>
 			<span id="surnameMissing" class="error-message">Surname is a required field.</span><br>
 			Address:<br>
-			<input type="text" name="address"><br>
+			<input type="text" name="address" required><br>
 			State:<br>
 			<select name="State">
 				<option value="qld">Queensland</option>
@@ -31,10 +30,12 @@
 			<input type="checkbox" name="diet" value="vegetarian">Vegetarian<br>
 			Password:<br>
 			<input type="password" name="password" required><br>
+      <span id="passwordMissing" class="error-message">Password is a required field.</span><br>
 			Confirm Password:<br>
 			<input type="password" name="confirmPassword" required><br><br>
-			<input type="submit" value="Submit"> 
-		
+      <span id="passwordMatch" class="error-message">Confirmation password must match.</span><br>
+			<input type="submit" value="Submit">
+
 		</form>
 	</body>
 </html>

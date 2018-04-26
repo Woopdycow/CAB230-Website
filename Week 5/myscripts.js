@@ -90,7 +90,7 @@ function showPosition(position) {
 	var lon1 = position.coords.longitude;
 	var lat2 = DISNEY_LAT;
 	var lon2 = DISNEY_LONG;
-	
+
 	var x1 = lat2 - lat1;
 	var deltaLat = x1.toRad();
 	var x2 = lon2 - lon1;
@@ -101,9 +101,9 @@ function showPosition(position) {
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 	var d = EARTH_RADIUS * c;
 	//alert(d);
-	
-	document.getElementById("status").innerHTML = "Disney World is " + Math.round(d) + " kilometres from your location.";	
-	
+
+	document.getElementById("status").innerHTML = "Disney World is " + Math.round(d) + " kilometres from your location.";
+
 }
 function showError(error) {
 	var msg = "";
@@ -147,4 +147,43 @@ var wifiThree = {
 	"suburb": "Brisbane",
 	"latitude": -27.46843,
 	"longitude": 153.02422
+}
+
+function compareWifi(){
+	var e1 = document.getElementById("selection1");
+	var value1 = e1.options[e1.selectedIndex].text;
+
+	var e2 = document.getElementById("selection2");
+	var value2 = e2.options[e2.selectedIndex].text;
+
+	switch (value1) {
+    case "Wifi 1":
+        wifiOneLocation = wifiOne.suburb;
+        break;
+    case "Wifi 2":
+        wifiOneLocation = wifiTwo.suburb;
+        break;
+    case "Wifi 3":
+        wifiOneLocation = wifiThree.suburb
+        break;
+	}
+	switch (value2) {
+    case "Wifi 1":
+        wifiTwoLocation = wifiOne.suburb;
+        break;
+    case "Wifi 2":
+        wifiTwoLocation = wifiTwo.suburb;
+        break;
+    case "Wifi 3":
+        wifiTwoLocation = wifiThree.suburb;
+        break;
+	}
+
+	window.alert(wifiOneLocation);
+	window.alert(wifiTwoLocation);
+	if (wifiOneLocation == wifiTwoLocation){
+		document.getElementById("compareButton").style.color = "green";
+	} else {
+		document.getElementById("compareButton").style.color = "red";
+	}
 }

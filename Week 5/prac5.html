@@ -5,22 +5,22 @@
 		<script type="text/javascript" src="myscripts.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-	<body">
+	<body>
 		<h1 id="welcome">Hello, world!</h1>
-		
+
 		<script type="text/javascript">
 			document.write("This is a test.");
 			console.log("Here is a log message");
 		</script>
-		
+
 		<p>
 			Here's a <a onclick="changeIt(); return false;" href="#">link</a> with an onclick</a>.
 		</p>
-		
+
 		<p>
 			<a onclick="sortList('fruits'); return false;" href="#">SORT LIST</a>
 		</p>
-		
+
 		<ul id="fruits">
 			<li>Orange</li>
 			<li>Apple</li>
@@ -30,11 +30,11 @@
 		<div id="ghostBox">
 			YO
 		</div>
-		
+
 		<p>
 			<a onclick="sortTable('scores'); return false;" href="#">HIDE VALUES LESS THAN 5</a>
 		</p>
-		
+
 		<table id="scores">
 			<tr>
 				<th>Name</th>
@@ -65,25 +65,29 @@
 				<td>2</td>
 			</tr>
 		</table>
-		
+
 		</br>
-		
+
 		<button onclick="getLocation()">Get location!</button>
 		<p id="status">
 			Click the button to get your distance from Disney World.
 		</p>
-		
-		<select name="Wifi">
-		  <option value="wifiOne">Wifi 1</option>
-		  <option value="wifiTwo">Wifi 2</option>
-		  <option value="wifiThree">Wifi 3</option>
+
+		<select name="Wifi" id="selection1">
+		  <option value="1">Wifi 1</option>
+		  <option value="2">Wifi 2</option>
+		  <option value="3">Wifi 3</option>
 		</select>
-		
-		<select name="Wifi">
-		  <option value="wifiOne">Wifi 1</option>
-		  <option value="wifiTwo">Wifi 2</option>
-		  <option value="wifiThree">Wifi 3</option>
+
+		<select name="Wifi" id="selection2">
+		  <option value="1">Wifi 1</option>
+		  <option value="2">Wifi 2</option>
+		  <option value="3">Wifi 3</option>
 		</select>
-				
+
+		<button id="compareButton" onclick="compareWifi();">
+			Compare Suburbs
+		</button>
+
 	</body>
 </html>
