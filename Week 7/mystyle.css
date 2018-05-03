@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+p {
+    margin: 0px;
+    padding: 50px 40px 30px 40px;
+    font-size: 1.8em;
+
+}
+
+nav {
+
+    padding: 20px;
+    border-bottom: 1px dashed #888;
+    margin-bottom: 20px;
+
+}
+
+nav a {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #bd2c00;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Lato,Verdana,Geneva,Arial,Helvetica,sans-serif;
+    margin : 0;
+    text-align: center;
+
+}
+
