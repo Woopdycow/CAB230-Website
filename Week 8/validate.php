@@ -22,8 +22,6 @@ function label($name, $label){
 }
 
 function errorLabel($errors, $name){
-  echo "<span id=\"$nameError\" class="error">
-    <?php if (isset($errors['$name'])) echo $errors['fname'] ?>
-  </span>
+  echo "<span id=\"$nameError\" class='error'><?php if (isset($errors['$name'])) echo $errors['fname'] ?></span>";
 }
 ?>
