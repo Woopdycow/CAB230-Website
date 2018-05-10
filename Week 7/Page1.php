@@ -5,7 +5,7 @@
 
 <body>
 
-<?php include 'C:\Temp\menu.php'; ?>
+<?php include 'menu.php'; ?>
 
 <h1>While you decline to cry,</h1>
 

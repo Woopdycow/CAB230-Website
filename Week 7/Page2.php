@@ -5,7 +5,7 @@
 
 <body>
 
-<?php include 'C:\Temp\menu.php'; ?>
+<?php include 'menu.php'; ?>
 
 <h2>high on the mountainside</h2>
 
